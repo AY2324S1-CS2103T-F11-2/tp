@@ -144,6 +144,14 @@
       "headingKeywords": {}
     },
     {
+      "src": "team/samuelim01.md",
+      "title": "Samuel Lim's Project Portfolio Page",
+      "headings": {
+        "project-wedlog": "Project: WedLog"
+      },
+      "headingKeywords": {}
+    },
+    {
       "src": "tutorials/AddRemark.md",
       "title": "Tutorial: Adding a command",
       "headings": {
