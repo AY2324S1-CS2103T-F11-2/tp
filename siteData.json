@@ -129,9 +129,9 @@
     },
     {
       "src": "index.md",
-      "title": "",
+      "title": "WedLog",
       "headings": {
-        "addressbook-level-3": "AddressBook Level-3"
+        "wedlog": "WedLog"
       },
       "headingKeywords": {}
     },
