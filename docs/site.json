@@ -1,8 +1,7 @@
 {
   "baseUrl": "",
-  "titlePrefix": "Wedlog",
-  "titleSuffix": "AddressBook Level-3",
-  "faviconPath": "images/SeEduLogo.png",
+  "title": "WedLog",
+  "faviconPath": "images/WedLogLogo.png",
   "style": {
     "codeTheme": "light"
   },

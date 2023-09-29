@@ -7,55 +7,50 @@
 
 We are a team based in the [School of Computing, National University of Singapore](http://www.comp.nus.edu.sg).
 
-You can reach us at the email `seer[at]comp.nus.edu.sg`
-
 ## Project team
 
-### John Doe
+### Keagan Pang
 
-<img src="images/johndoe.png" width="200px">
+<img src="images/keaganpzh.png" width="200px">
 
-[[homepage](http://www.comp.nus.edu.sg/~damithch)]
-[[github](https://github.com/johndoe)]
-[[portfolio](team/johndoe.md)]
+[[github](https://github.com/keaganpzh)]
 
-* Role: Project Advisor
+* Role: Git expert
+* Responsibilities: Integration
 
-### Jane Doe
+### Pan Xinping
 
-<img src="images/johndoe.png" width="200px">
+<img src="images/p-xp.png" width="200px">
 
-[[github](http://github.com/johndoe)]
-[[portfolio](team/johndoe.md)]
+[[github](http://github.com/p-xp)]
 
 * Role: Team Lead
-* Responsibilities: UI
+* Responsibilities: Deliverables & Deadlines
 
-### Johnny Doe
+### Joe Chua
 
-<img src="images/johndoe.png" width="200px">
+<img src="images/wasjoe1.jpg" width="200px">
 
-[[github](http://github.com/johndoe)] [[portfolio](team/johndoe.md)]
-
-* Role: Developer
-* Responsibilities: Data
-
-### Jean Doe
-
-<img src="images/johndoe.png" width="200px">
-
-[[github](http://github.com/johndoe)]
-[[portfolio](team/johndoe.md)]
+[[github](http://github.com/wasjoe1)]
 
 * Role: Developer
-* Responsibilities: Dev Ops + Threading
+* Responsibilities: Documentation
 
-### James Doe
+### Samuel Lim
 
-<img src="images/johndoe.png" width="200px">
+<img src="images/samuelim01.jpg" width="200px">
 
-[[github](http://github.com/johndoe)]
-[[portfolio](team/johndoe.md)]
+[[github](http://github.com/samuelim01)]
+[[portfolio](team/samuelim01.md)]
+
+* Role: IDE/Java expert
+* Responsibilities: Code Quality
+
+### Shannon Tsou
+
+<img src="images/tllshan.png" width="200px">
+
+[[github](http://github.com/tllshan)]
 
 * Role: Developer
-* Responsibilities: UI
+* Responsibilities: Testing, Scheduling & Tracking
