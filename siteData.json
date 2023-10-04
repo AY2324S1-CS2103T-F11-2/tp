@@ -175,6 +175,14 @@
       "headingKeywords": {}
     },
     {
+      "src": "team/tllshan.md",
+      "title": "Shannon Tsou's Project Portfolio Page",
+      "headings": {
+        "project-wedlog": "Project: WedLog"
+      },
+      "headingKeywords": {}
+    },
+    {
       "src": "tutorials/AddRemark.md",
       "title": "Tutorial: Adding a command",
       "headings": {
