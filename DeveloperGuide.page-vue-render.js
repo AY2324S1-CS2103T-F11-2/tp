@@ -197,13 +197,13 @@ with(this){return _c('h2',{attrs:{"id":"appendix-requirements"}},[_c('strong',[_
 with(this){return _c('h3',{attrs:{"id":"product-scope"}},[_v("Product scope"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#product-scope","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Target user profile")]),_v(":")])}
+with(this){return _c('p',[_c('strong',[_v("Target user profile")]),_v(":\nA bride or groom who")])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("has a need to manage a significant number of contacts")]),_v(" "),_c('li',[_v("prefer desktop apps over other types")]),_v(" "),_c('li',[_v("can type fast")]),_v(" "),_c('li',[_v("prefers typing to mouse interactions")]),_v(" "),_c('li',[_v("is reasonably comfortable using CLI apps")])])}
+with(this){return _c('ul',[_c('li',[_v("Is tech-savvy and is comfortable using CLI")]),_v(" "),_c('li',[_v("Can type fast")]),_v(" "),_c('li',[_v("Prefers working on a desktop")]),_v(" "),_c('li',[_v("Wants to plan their own wedding")]),_v(" "),_c('li',[_v("Has a partner who is uninvolved in the planning process")]),_v(" "),_c('li',[_v("Values efficiency and having a consolidated wedding planning platform")])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Value proposition")]),_v(": manage contacts faster than a typical mouse/GUI driven app")])}
+with(this){return _c('p',[_c('strong',[_v("Value proposition")]),_v(": consolidate all information related to wedding guests and vendors into 1 platform for\nstreamlined planning.")])}
 },function anonymous(
 ) {
 with(this){return _c('h3',{attrs:{"id":"user-stories"}},[_v("User stories"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#user-stories","onclick":"event.stopPropagation()"}})])}
@@ -278,6 +278,6 @@ with(this){return _c('h3',{attrs:{"id":"saving-data"}},[_v("Saving data"),_c('a'
 with(this){return _c('ol',[_c('li',[_c('p',[_v("Dealing with missing/corrupted data files")]),_v(" "),_c('ol',[_c('li',[_c('em',[_v("{explain how to simulate a missing/corrupted file, and the expected behavior}")])])])]),_v(" "),_c('li',[_c('p',[_c('em',[_v("{ more test cases …​ }")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.1.0")]),_v(", generated on Thu, 5 Oct 2023, 19:56:32 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.1.0")]),_v(", generated on Thu, 5 Oct 2023, 21:07:35 GMT+8]")])])])}
 }];
   
