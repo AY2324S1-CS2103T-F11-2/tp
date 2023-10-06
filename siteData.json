@@ -110,6 +110,8 @@
         "wedlog-user-guide": "WedLog User Guide",
         "quick-start": "Quick start",
         "features": "Features",
+        "adding-a-vendor-vendor-add": "Adding a vendor : vendor add",
+        "deleting-a-vendor-vendor-delete": "Deleting a vendor : vendor delete",
         "viewing-all-guests-guest-list": "Viewing all guests: guest list",
         "viewing-a-specific-guest-guest-view": "Viewing a specific guest: guest view",
         "viewing-all-vendors-vendor-list": "Viewing all vendors: vendor list",
