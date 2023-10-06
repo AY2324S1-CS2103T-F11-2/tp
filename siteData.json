@@ -105,12 +105,15 @@
     },
     {
       "src": "UserGuide.md",
+      "title": "User Guide",
       "headings": {
         "wedlog-user-guide": "WedLog User Guide",
         "quick-start": "Quick start",
         "features": "Features",
-        "viewing-all-vendors": "Viewing all vendors",
-        "view-a-specific-vendor": "View a specific vendor",
+        "viewing-all-guests-guest-list": "Viewing all guests: guest list",
+        "viewing-a-specific-guest-guest-view": "Viewing a specific guest: guest view",
+        "viewing-all-vendors-vendor-list": "Viewing all vendors: vendor list",
+        "viewing-a-specific-vendor-vendor-view": "Viewing a specific vendor: vendor view",
         "faq": "FAQ",
         "known-issues": "Known issues",
         "command-summary": "Command summary"
