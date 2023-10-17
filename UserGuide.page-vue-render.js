@@ -56,13 +56,13 @@ with(this){return _c('ul',[_c('li',[_v("Word with or without spaces")])])}
 with(this){return _c('p',[_v("Acceptable values for "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("r/RSVP_STATUS")]),_v(":")])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("yes")])]),_v(" "),_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("no")])]),_v(" "),_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("unknown")])])])}
+with(this){return _c('ul',[_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("yes")])]),_v(" "),_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("no")])]),_v(" "),_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("unknown")])]),_v(" "),_c('li',[_v("Inputs with no values (e.g. "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("r/")]),_v(") signify that RSVP status should be stored as "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("unknown")])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_v("Acceptable values for "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("d/DIETARY_REQUIREMENTS")]),_v(":")])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("Word with or without spaces")]),_v(" "),_c('li',[_v("Inputs with only spaces signify no dietary requirements")])])}
+with(this){return _c('ul',[_c('li',[_v("Word with or without spaces")]),_v(" "),_c('li',[_v("Inputs with no values (e.g. "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("d/")]),_v(") signify no dietary requirements")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_v("Acceptable values for "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("t/tag")]),_v(":")])}
@@ -74,7 +74,7 @@ with(this){return _c('ul',[_c('li',[_v("Alphanumeric word without spaces")])])}
 with(this){return _c('blockquote',[_c('p',[_v("Tips:\n"),_c('br')]),_v(" "),_c('ul',[_c('li',[_v("Parameters can be in any order\n"),_c('br')]),_v(" "),_c('li',[_v("A guest can have any number of tags (including 0)")])])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("guest add n/Bob p/91234567 a/Blk 123 r/no")])]),_v(" "),_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("guest add n/Keith p/92354567 d/ r/no")])]),_v(" "),_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("guest add n/John Doe p/98765432 e/john@doe.com a/Street 456 r/unknown d/vegetarian t/friend")])]),_v(" "),_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("guest add n/Jane Tan e/jane@example.com r/yes d/halal t/family t/bridesmaid")])])])}
+with(this){return _c('ul',[_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("guest add n/Bob p/91234567 a/Blk 123 r/no")])]),_v(" "),_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("guest add n/Keith p/92354567 d/ r/")]),_v(": Will be interpreted as Keith having no dietary requirements and unknown RSVP status.")]),_v(" "),_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("guest add n/John Doe p/98765432 e/john@doe.com a/Street 456 r/unknown d/vegetarian t/friend")])]),_v(" "),_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("guest add n/Jane Tan e/jane@example.com r/yes d/halal t/family t/bridesmaid")])])])}
 },function anonymous(
 ) {
 with(this){return _c('ul',[_c('li',[_v("Adds the guest")]),_v(" "),_c('li',[_v("Displays a message showing the added guest.")])])}
@@ -233,6 +233,6 @@ with(this){return _c('p',[_v("User input begins with "),_c('code',{pre:true,attr
 with(this){return _c('ul',[_c('li',[_v("Display error message \"Please specify a command.\"")])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.1.0")]),_v(", generated on Mon, 16 Oct 2023, 22:58:43 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.1.0")]),_v(", generated on Tue, 17 Oct 2023, 13:41:29 GMT+8]")])])])}
 }];
   
