@@ -6,11 +6,11 @@ import wedlog.address.commons.core.index.Index;
 import wedlog.address.logic.commands.GuestDeleteCommand;
 import wedlog.address.logic.parser.exceptions.ParseException;
 
+
 /**
  * Parses user input specifically for GuestDelete commands.
  */
 public class GuestDeleteCommandParser implements Parser<GuestDeleteCommand> {
-
     /**
      * Parses the given {@code String} of arguments in the context of the DeleteCommand
      * and returns a DeleteCommand object for execution.

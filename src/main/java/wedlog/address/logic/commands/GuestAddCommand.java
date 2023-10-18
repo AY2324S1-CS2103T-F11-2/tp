@@ -8,11 +8,11 @@ import static wedlog.address.logic.parser.CliSyntax.PREFIX_NAME;
 import static wedlog.address.logic.parser.CliSyntax.PREFIX_PHONE;
 import static wedlog.address.logic.parser.CliSyntax.PREFIX_RSVP;
 import static wedlog.address.logic.parser.CliSyntax.PREFIX_TAG;
-import static wedlog.address.logic.parser.GuestCommandParser.GUEST_COMMAND_WORD;
 
 import wedlog.address.commons.util.ToStringBuilder;
 import wedlog.address.logic.Messages;
 import wedlog.address.logic.commands.exceptions.CommandException;
+import wedlog.address.logic.parser.GuestCommandParser;
 import wedlog.address.model.Model;
 import wedlog.address.model.person.Guest;
 
@@ -22,7 +22,7 @@ import wedlog.address.model.person.Guest;
 public class GuestAddCommand extends Command {
     public static final String COMMAND_WORD = "add";
 
-    public static final String MESSAGE_USAGE = GUEST_COMMAND_WORD + " " + COMMAND_WORD
+    public static final String MESSAGE_USAGE = GuestCommandParser.GUEST_COMMAND_WORD + " " + COMMAND_WORD
             + ": Adds a guest to the address book. "
             + "Compulsory Parameters: "
             + PREFIX_NAME + "NAME "
@@ -31,7 +31,7 @@ public class GuestAddCommand extends Command {
             + PREFIX_EMAIL + "EMAIL "
             + PREFIX_ADDRESS + "ADDRESS "
             + "[" + PREFIX_TAG + "TAG]...\n"
-            + "Example: " + GUEST_COMMAND_WORD + " " + COMMAND_WORD + " "
+            + "Example: " + GuestCommandParser.GUEST_COMMAND_WORD + " " + COMMAND_WORD + " "
             + PREFIX_NAME + "John Doe "
             + PREFIX_PHONE + "98765432 "
             + PREFIX_EMAIL + "johnd@example.com "
