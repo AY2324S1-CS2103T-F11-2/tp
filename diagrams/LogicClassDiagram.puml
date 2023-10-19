@@ -30,8 +30,8 @@ HiddenOutside ..> Logic
 
 LogicManager .right.|> Logic
 LogicManager -right->"1" AddressBookParser
-AddressBookParser ..> GuestCommmandParser : executes >
-AddressBookParser ..> VendorCommmandParser : executes >
+AddressBookParser ..> GuestCommmandParser : creates >
+AddressBookParser ..> VendorCommmandParser : creates >
 
 GuestCommmandParser ..> XYZCommand : creates >
 VendorCommmandParser ..> XYZCommand : creates >
