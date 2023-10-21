@@ -66,7 +66,7 @@ deactivate AddressBookParser
 LogicManager -> GuestDeleteCommand : execute()
 activate GuestDeleteCommand
 
-GuestDeleteCommand -> Model : deletePerson(1)
+GuestDeleteCommand -> Model : deleteGuest(1)
 activate Model
 
 Model --> GuestDeleteCommand

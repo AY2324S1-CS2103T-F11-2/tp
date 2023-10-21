@@ -119,6 +119,8 @@
         "viewing-a-specific-guest-guest-view": "Viewing a specific guest: guest view",
         "viewing-all-vendors-vendor-list": "Viewing all vendors: vendor list",
         "viewing-a-specific-vendor-vendor-view": "Viewing a specific vendor: vendor view",
+        "undoing-last-action-undo": "Undoing last action: undo",
+        "redoing-last-action-redo": "Redoing last action: redo",
         "exiting-the-program-exit": "Exiting the program: exit",
         "faq": "FAQ",
         "known-issues": "Known issues",
