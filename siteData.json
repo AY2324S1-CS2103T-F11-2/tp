@@ -115,6 +115,7 @@
         "deleting-a-guest-guest-delete": "Deleting a guest: guest delete",
         "adding-a-vendor-vendor-add": "Adding a vendor : vendor add",
         "deleting-a-vendor-vendor-delete": "Deleting a vendor : vendor delete",
+        "editing-a-vendor-vendor-edit": "Editing a vendor : vendor edit",
         "viewing-all-guests-guest-list": "Viewing all guests: guest list",
         "viewing-a-specific-guest-guest-view": "Viewing a specific guest: guest view",
         "viewing-all-vendors-vendor-list": "Viewing all vendors: vendor list",
