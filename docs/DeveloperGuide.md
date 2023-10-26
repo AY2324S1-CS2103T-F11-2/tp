@@ -158,6 +158,35 @@ Classes used by multiple components are in the `wedlog.addressbook.commons` pack
 
 This section describes some noteworthy details on how certain features are implemented.
 
+### Edit feature
+The edit feature allows users to edit any fields for a guest or vendor in WedLog (i.e., `Name`, `Phone`, `Email`, 
+`Address`, `Tags`, and `Rsvp Status`, `Dietary Requirements` and `Table Number` for Guests). The edit feature will 
+replace the existing values in these fields with the new values inputted by the user. It makes use of the `Index` of 
+the person in the currently displayed list to identify the person to be edited. The feature is implemented through the 
+classes `GuestEditCommand` and `VendorEditCommand`. 
+
+Given below is an example usage scenario and how the edit mechanism behaves at each step.
+
+Step 1. The user launches the application. WedLog shows all guests and vendors in their respective lists.
+
+Step 2. The user executes `xyz edit 5 n/John`, where `xyz` is either `guest` or `vendor`. This allows the user to edit the name of the fifth
+guest or vendor to `John`. For illustration purposes, we shall assume that `xyz` is `guest` for the following steps. To understand
+the usage scenario for `vendor edit`, simply replace all `Guest` keywords in class and method names with `Vendor`.
+
+Step 3. `GuestCommandParser` creates a `GuestEditCommandParser` object and calls `GuestEditCommandParser#parse` to parse the user input.
+`GuestEditCommandParser#parse` parses the `Index` of the guest to be edited.
+
+Step 4. `GuestEditCommandParser#parse` creates an `EditGuestDescriptor`. It calls upon `ParserUtil#parseXyz`, where `xyz` is the 
+field being edited, to check the validity of the user input and convert it into field objects (e.g. string representing a new name into a `Name` object).
+If input is valid, `#parse` then assigns the created field objects to the created `EditGuestDescriptor`.
+
+Step 5. Lastly, `GuestEditCommandParser#parse` creates a `GuestEditCommand` using the `Index` and `editGuestDescriptor` obtained in
+Steps 3 and 4. It returns the created `GuestEditCommand` to `LogicManager`, which calls the `#execute` method on the `GuestEditCommand`.
+
+Step 6. `GuestEditCommand#execute` creates a new guest by combining fields from the existing guest object referenced by `Index` and
+the new field values specified by the user. By calling on `Model#setGuest`, it then replaces the existing guest in WedLog with the newly created guest.
+
+
 ### \[Proposed\] Undo/redo feature
 
 #### Proposed Implementation
