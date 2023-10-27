@@ -1,0 +1,41 @@
+@startuml
+!include style.puml
+skinparam arrowThickness 1.1
+skinparam arrowColor MODEL_COLOR
+skinparam classBackgroundColor MODEL_COLOR
+
+Package Guest as ModelPackage <<Rectangle>>{
+
+Class Person
+Class Address
+Class Email
+Class Name
+Class Phone
+Class Tag
+Class Guest
+Class DietaryRequirement
+Class RsvpStatus
+Class TableNumber
+
+}
+
+Guest --|> Person
+
+Person *--> "1" Name
+Person *--> "0..1" Phone
+Person *--> "0..1" Email
+Person *--> "0..1" Address
+Person *--> "*" Tag
+Guest *--> "*" DietaryRequirement
+Guest *--> "1" RsvpStatus
+Guest *--> "0..1" TableNumber
+
+Person -[hidden]right-> Guest
+Name -[hidden]right-> Phone
+Phone -[hidden]right-> Address
+Address -[hidden]right-> Email
+Email -[hidden]right-> Tag
+Tag -[hidden]right-> RsvpStatus
+RsvpStatus -[hidden]right-> DietaryRequirement
+
+@enduml
