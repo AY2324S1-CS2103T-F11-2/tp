@@ -1,0 +1,67 @@
+@startuml
+!include style.puml
+
+
+participant ":GuestFilterCommandParser" as GuestFilterCommandParser LOGIC_COLOR
+
+participant ":NamePredicate" as NamePredicate MODEL_COLOR
+participant ":AddressPredicate" as AddressPredicate MODEL_COLOR
+participant ":EmailPredicate" as EmailPredicate MODEL_COLOR
+participant ":PhonePredicate" as PhonePredicate MODEL_COLOR
+participant ":GuestRsvpPredicate" as GuestRsvpPredicate MODEL_COLOR
+participant ":GuestTablePredicate" as GuestTablePredicate MODEL_COLOR
+
+create GuestFilterCommandParser
+group sd [create list of predicates]
+    AddressPredicate -[hidden]-> GuestFilterCommandParser
+
+    group opt [input contains Name prefix]
+        create NamePredicate
+        activate GuestFilterCommandParser
+        GuestFilterCommandParser -> NamePredicate
+        activate NamePredicate
+        NamePredicate -> GuestFilterCommandParser
+        deactivate NamePredicate
+    end
+
+    group opt [input contains Address prefix]
+        create AddressPredicate
+        GuestFilterCommandParser -> AddressPredicate
+        activate AddressPredicate
+        AddressPredicate -> GuestFilterCommandParser
+        deactivate AddressPredicate
+    end
+
+    group opt [input contains Email prefix]
+            create EmailPredicate
+            GuestFilterCommandParser -> EmailPredicate
+            activate EmailPredicate
+            EmailPredicate -> GuestFilterCommandParser
+            deactivate EmailPredicate
+    end
+
+    group opt [input contains Phone prefix]
+            create PhonePredicate
+            GuestFilterCommandParser -> PhonePredicate
+            activate PhonePredicate
+            PhonePredicate -> GuestFilterCommandParser
+            deactivate PhonePredicate
+    end
+
+    group opt [input contains Rsvp prefix]
+            create GuestRsvpPredicate
+            GuestFilterCommandParser -> GuestRsvpPredicate
+            activate GuestRsvpPredicate
+            GuestRsvpPredicate -> GuestFilterCommandParser
+            deactivate GuestRsvpPredicate
+    end
+
+    group opt [input contains Table number prefix]
+            create GuestTablePredicate
+            GuestFilterCommandParser -> GuestTablePredicate
+            activate GuestTablePredicate
+            GuestTablePredicate -> GuestFilterCommandParser
+            deactivate GuestTablePredicate
+    end
+end
+@enduml

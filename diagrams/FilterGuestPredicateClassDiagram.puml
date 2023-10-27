@@ -1,0 +1,16 @@
+@startuml
+!include style.puml
+skinparam arrowThickness 1.1
+skinparam arrowColor MODEL_COLOR
+skinparam classBackgroundColor MODEL_COLOR
+
+Class "<<interface>>\nPredicate" as Predicate #444444
+
+note left
+Predicate<Guest>
+end note
+
+GuestRsvpPredicate .up.|> Predicate
+GuestTablePredicate .up.|> Predicate
+
+@enduml
