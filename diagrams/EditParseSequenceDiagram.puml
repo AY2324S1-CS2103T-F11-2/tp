@@ -1,0 +1,63 @@
+@startuml
+!include style.puml
+skinparam ArrowFontStyle plain
+
+box Logic LOGIC_COLOR_T1
+participant ":LogicManager" as LogicManager LOGIC_COLOR
+participant ":AddressBookParser" as AddressBookParser LOGIC_COLOR
+participant ":GuestCommandParser" as GuestCommandParser LOGIC_COLOR
+participant ":GuestEditCommandParser" as GuestEditCommandParser LOGIC_COLOR
+participant "e:GuestEditCommand" as GuestEditCommand LOGIC_COLOR
+end box
+
+[-> LogicManager : execute("guest edit 2 p/")
+activate LogicManager
+
+LogicManager -> AddressBookParser : parseCommand("guest edit 2 p/")
+activate AddressBookParser
+
+create GuestCommandParser
+AddressBookParser -> GuestCommandParser
+activate GuestCommandParser
+
+GuestCommandParser --> AddressBookParser
+deactivate GuestCommandParser
+
+AddressBookParser -> GuestCommandParser : parse("edit 2 p/")
+activate GuestCommandParser
+
+create GuestEditCommandParser
+GuestCommandParser -> GuestEditCommandParser
+activate GuestEditCommandParser
+
+GuestEditCommandParser --> GuestCommandParser
+deactivate GuestEditCommandParser
+
+GuestCommandParser -> GuestEditCommandParser : parse("2 p/")
+activate GuestEditCommandParser
+
+create GuestEditCommand
+GuestEditCommandParser -> GuestEditCommand
+activate GuestEditCommand
+
+GuestEditCommand --> GuestEditCommandParser : e
+deactivate GuestEditCommand
+
+GuestEditCommandParser --> GuestCommandParser : e
+deactivate GuestEditCommandParser
+'Hidden arrow to position the destroy marker below the end of the activation bar.
+GuestEditCommandParser -[hidden]-> GuestCommandParser
+destroy GuestEditCommandParser
+
+GuestCommandParser --> AddressBookParser : e
+deactivate GuestCommandParser
+'Hidden arrow to position the destroy marker below the end of the activation bar.
+GuestCommandParser -[hidden]-> AddressBookParser
+destroy GuestCommandParser
+
+AddressBookParser --> LogicManager : e
+deactivate AddressBookParser
+
+[<--LogicManager
+deactivate LogicManager
+@enduml
