@@ -52,6 +52,7 @@
         "common-classes": "Common classes",
         "implementation": "Implementation",
         "tracking-of-guests-and-vendors": "Tracking of Guests and Vendors",
+        "delete-feature": "Delete feature",
         "add-guest-and-vendor-feature": "Add Guest and Vendor feature",
         "filter-guests-vendors-feature": "Filter Guests/ Vendors Feature",
         "proposed-undo-redo-feature": "[Proposed] Undo/redo feature",

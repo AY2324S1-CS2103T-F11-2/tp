@@ -1,0 +1,65 @@
+@startuml
+!include style.puml
+skinparam ArrowFontStyle plain
+
+box Logic LOGIC_COLOR_T1
+participant ":LogicManager" as LogicManager LOGIC_COLOR
+participant ":AddressBookParser" as AddressBookParser LOGIC_COLOR
+participant ":XYZCommandParser" as XYZCommandParser LOGIC_COLOR
+participant ":XYZDeleteCommandParser" as XYZDeleteCommandParser LOGIC_COLOR
+participant "d:XYZDeleteCommand" as XYZDeleteCommand LOGIC_COLOR
+end box
+
+[-> LogicManager : execute("xyz delete 1")
+activate LogicManager
+note left of LogicManager: xyz = guest or vendor
+
+LogicManager -> AddressBookParser : parseCommand("xyz delete 1")
+activate AddressBookParser
+
+create XYZCommandParser
+AddressBookParser -> XYZCommandParser
+activate XYZCommandParser
+note right of XYZCommandParser: XYZ = Guest or Vendor
+
+XYZCommandParser --> AddressBookParser
+deactivate XYZCommandParser
+
+AddressBookParser -> XYZCommandParser : parse("delete 1")
+activate XYZCommandParser
+
+create XYZDeleteCommandParser
+XYZCommandParser -> XYZDeleteCommandParser
+activate XYZDeleteCommandParser
+
+XYZDeleteCommandParser --> XYZCommandParser
+deactivate XYZDeleteCommandParser
+
+XYZCommandParser -> XYZDeleteCommandParser : parse("1")
+activate XYZDeleteCommandParser
+
+create XYZDeleteCommand
+XYZDeleteCommandParser -> XYZDeleteCommand
+activate XYZDeleteCommand
+
+XYZDeleteCommand --> XYZDeleteCommandParser : d
+deactivate XYZDeleteCommand
+
+XYZDeleteCommandParser --> XYZCommandParser : d
+deactivate XYZDeleteCommandParser
+'Hidden arrow to position the destroy marker below the end of the activation bar.
+XYZDeleteCommandParser -[hidden]-> XYZCommandParser
+destroy XYZDeleteCommandParser
+
+XYZCommandParser --> AddressBookParser : d
+deactivate XYZCommandParser
+'Hidden arrow to position the destroy marker below the end of the activation bar.
+XYZCommandParser -[hidden]-> AddressBookParser
+destroy XYZCommandParser
+
+AddressBookParser --> LogicManager : d
+deactivate AddressBookParser
+
+[<--LogicManager
+deactivate LogicManager
+@enduml
