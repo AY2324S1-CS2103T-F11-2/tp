@@ -18,6 +18,8 @@ Class VendorCard
 Class StatusBarFooter
 Class CommandBox
 Class StatisticsPanel
+Class RsvpPanel
+Class DietaryPanel
 }
 
 package Model <<Rectangle>> {
@@ -39,6 +41,8 @@ MainWindow *-down-> "1" GuestListPanel
 MainWindow *-down-> "1" VendorListPanel
 MainWindow *-down-> "1" StatusBarFooter
 MainWindow *-down-> "1" StatisticsPanel
+MainWindow *-down-> "1" RsvpPanel
+MainWindow *-down-> "1" DietaryPanel
 MainWindow --> "0..1" HelpWindow
 
 GuestListPanel -down-> "*" GuestCard
@@ -54,8 +58,13 @@ VendorListPanel --|> UiPart
 VendorCard --|> UiPart
 StatusBarFooter --|> UiPart
 StatisticsPanel --|> UiPart
+RsvpPanel --|> UiPart
+DietaryPanel --|> UiPart
 HelpWindow --|> UiPart
 
+StatisticsPanel ..> Model
+RsvpPanel ..> Model
+DietaryPanel ..> Model
 GuestCard ..> Model
 VendorCard ..> Model
 UiManager -right-> Logic
