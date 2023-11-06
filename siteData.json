@@ -151,9 +151,14 @@
     },
     {
       "src": "team/keaganpzh.md",
+      "title": "Keagan Pang's Project Portfolio Page",
       "headings": {
         "project-wedlog": "Project: WedLog",
-        "summary-of-contributions": "Summary of Contributions"
+        "features": "Features",
+        "code-contributed": "Code Contributed",
+        "documentation": "Documentation",
+        "contributions-to-team-tasks": "Contributions to team tasks",
+        "contributions-beyond-the-project-team": "Contributions beyond the Project Team"
       },
       "headingKeywords": {}
     },
