@@ -189,7 +189,11 @@
       "src": "team/tllshan.md",
       "title": "Shannon Tsou's Project Portfolio Page",
       "headings": {
-        "project-wedlog": "Project: WedLog"
+        "project-wedlog": "Project: WedLog",
+        "features": "Features",
+        "code-contributed": "Code Contributed",
+        "project-management": "Project Management",
+        "documentation": "Documentation"
       },
       "headingKeywords": {}
     },
