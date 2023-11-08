@@ -195,16 +195,9 @@
     },
     {
       "src": "team/wasjoe1.md",
+      "title": "Joe Chua's Project Portfolio Page",
       "headings": {
-        "overview": "Overview",
-        "summary-of-contributions": "Summary of Contributions",
-        "code-contributed": "Code contributed",
-        "enhancements-implemented": "Enhancements implemented",
-        "contributions-to-the-ug": "Contributions to the UG",
-        "contributions-to-the-dg": "Contributions to the DG",
-        "contributions-to-team-tasks": "Contributions to team tasks",
-        "reviewing-mentoring-contributions": "Reviewing/Mentoring Contributions",
-        "contributions-beyond-the-project-team": "Contributions beyond the Project Team"
+        "project-wedlog": "Project: WedLog"
       },
       "headingKeywords": {}
     },
