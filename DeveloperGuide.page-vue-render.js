@@ -11,7 +11,7 @@ with(this){return _c('h1',{attrs:{"id":"wedlog-developer-guide"}},[_v("WedLog De
 with(this){return _c('h2',{attrs:{"id":"acknowledgements"}},[_c('strong',[_v("Acknowledgements")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#acknowledgements","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('em',[_v("{ list here sources of all reused/adapted ideas, code, documentation, and third-party libraries -- include links to the original source as well }")])])}
+with(this){return _c('ul',[_c('li',[_v("The undo / redo feature was reused with minor modifications from "),_c('a',{attrs:{"href":"https://github.com/se-edu/addressbook-level4"}},[_v("Address Book(Level 4)")]),_v(".")]),_v(" "),_c('li',[_v("The function to parse optional values was reused with minor modifications from "),_c('a',{attrs:{"href":"https://github.com/AY2324S1-CS2103T-W08-3/tp"}},[_v("Jobby")]),_v(".")])])}
 },function anonymous(
 ) {
 with(this){return _c('h2',{attrs:{"id":"setting-up-getting-started"}},[_c('strong',[_v("Setting up, getting started")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#setting-up-getting-started","onclick":"event.stopPropagation()"}})])}
@@ -686,6 +686,6 @@ with(this){return _c('h4',{attrs:{"id":"implementation-15"}},[_v("Implementation
 with(this){return _c('p',[_v("The implementation of this enhancement will be done by first designing a different colour scheme with higher contrast for WedLog, and then changing the colour scheme of the UI components\nby changing the relevant style attributes in the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v(".css")]),_v(" files.")])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.1.0")]),_v(", generated on Thu, 9 Nov 2023, 22:29:05 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.1.0")]),_v(", generated on Sat, 11 Nov 2023, 11:06:15 GMT+8]")])])])}
 }];
   
