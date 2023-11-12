@@ -140,16 +140,14 @@
         "2-4-list-command": "2.4. List Command",
         "2-5-filter-command": "2.5. Filter Command",
         "2-6-general-commands": "2.6. General Commands",
-        "2-6-4-clearing-guest-and-vendor-lists-clear": "2.6.4. Clearing guest and vendor lists: clear",
+        "2-6-4-clearing-guests-and-vendors-clear": "2.6.4. Clearing guests and vendors: clear",
         "2-6-5-exiting-the-program-exit": "2.6.5. Exiting the program: exit",
         "2-7-quick-view-panel": "2.7. Quick View Panel",
         "3-faq": "3. FAQ",
         "4-known-issues": "4. Known issues",
         "5-future-implementations": "5. Future implementations",
         "6-command-summary": "6. Command summary",
-        "7-appendices": "7. Appendices",
-        "7-1-appendix-a-acceptable-values-for-parameters": "7.1. Appendix A: Acceptable values for parameters",
-        "7-2-appendix-b-miscellaneous-error-messages": "7.2. Appendix B: Miscellaneous error messages"
+        "7-appendix-a-acceptable-values-for-parameters": "7. Appendix A: Acceptable values for parameters"
       },
       "headingKeywords": {}
     },
