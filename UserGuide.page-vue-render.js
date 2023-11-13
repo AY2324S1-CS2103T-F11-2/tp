@@ -572,6 +572,6 @@ with(this){return _c('ul',[_c('li',[_v("Alphanumeric word without spaces.")])])}
 with(this){return _c('blockquote',[_c('p',[_c('a',{attrs:{"href":"#user-guide"}},[_v("Back to top")])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.1.0")]),_v(", generated on Tue, 14 Nov 2023, 1:59:15 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.1.0")]),_v(", generated on Tue, 14 Nov 2023, 2:30:43 GMT+8]")])])])}
 }];
   
