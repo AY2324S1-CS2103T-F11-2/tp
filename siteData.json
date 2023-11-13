@@ -88,13 +88,13 @@
         "8-9-remove-full-screen-support-for-help-window-macos": "8.9. Remove full-screen support for help window (macOS)",
         "8-10-better-colour-scheme": "8.10. Better colour scheme",
         "9-appendix-d-effort": "9. Appendix D: Effort",
-        "9-1-replacing-person-with-guest-and-vendor-classes": "9.1. Replacing Person with Guest and Vendor classes",
+        "9-1-augmenting-person-with-guest-and-vendor-classes": "9.1. Augmenting Person with Guest and Vendor classes",
         "9-2-altering-most-fields-to-become-optional": "9.2. Altering most fields to become Optional",
         "9-3-enhancing-guest-class-with-new-parameters": "9.3. Enhancing Guest class with new parameters",
         "9-4-enhancing-the-add-and-edit-commands": "9.4. Enhancing the add and edit commands",
         "9-5-implementing-the-filter-command": "9.5. Implementing the filter command",
         "9-6-implementing-the-undo-and-redo-command": "9.6. Implementing the undo and redo command",
-        "9-7-introducing-rsvpstatus-pie-chart-and-dietaryrequirements-statistics-panel": "9.7. Introducing RsvpStatus pie chart and DietaryRequirements statistics panel"
+        "9-7-introducing-rsvp-status-pie-chart-and-dietary-requirements-statistics-panel": "9.7. Introducing Rsvp Status pie chart and Dietary Requirements statistics panel"
       },
       "headingKeywords": {}
     },
