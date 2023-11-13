@@ -14,5 +14,6 @@ NamePredicate .up.|> Predicate
 AddressPredicate .up.|> Predicate
 EmailPredicate .up.|> Predicate
 PhonePredicate .up.|> Predicate
+TagPredicate .up.|> Predicate
 
 @enduml

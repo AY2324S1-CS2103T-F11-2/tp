@@ -12,5 +12,6 @@ end note
 
 GuestRsvpPredicate .up.|> Predicate
 GuestTablePredicate .up.|> Predicate
+GuestDietaryPredicate .up.|> Predicate
 
 @enduml

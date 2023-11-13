@@ -1,0 +1,49 @@
+@startuml
+!include style.puml
+
+
+box Logic LOGIC_COLOR_T1
+participant ":LogicManager" as LogicManager LOGIC_COLOR
+participant ":AddressBookParser" as AddressBookParser LOGIC_COLOR
+participant ":XYZCommandParser" as XYZCommandParser LOGIC_COLOR
+participant ":XYZFilterCommandParser" as XYZFilterCommandParser LOGIC_COLOR
+end box
+
+note left LogicManager
+input is "XYZ filter n/John r/yes"
+end note
+[-> LogicManager: execute(input)
+activate LogicManager
+
+LogicManager -> AddressBookParser : parseCommand(input)
+activate AddressBookParser
+
+create XYZCommandParser
+AddressBookParser -> XYZCommandParser
+activate XYZCommandParser
+
+create XYZFilterCommandParser
+XYZCommandParser -> XYZFilterCommandParser
+activate XYZFilterCommandParser
+group ref [Create XYZFilterCommand]
+    XYZFilterCommandParser -[hidden]>
+end
+
+
+XYZFilterCommandParser --> XYZCommandParser : f
+deactivate XYZCommandParser
+
+XYZCommandParser --> AddressBookParser : f
+deactivate XYZCommandParser
+
+AddressBookParser --> LogicManager : f
+deactivate AddressBookParser
+
+group ref [Execute XYZFilterCommand]
+    LogicManager -[hidden]>
+end
+
+[<-- LogicManager : r
+deactivate LogicManager
+
+@enduml

@@ -1,0 +1,35 @@
+@startuml
+!include style.puml
+
+box Logic LOGIC_COLOR_T1
+participant ":LogicManager" as LogicManager LOGIC_COLOR
+participant ":GuestFilterCommand" as GuestFilterCommand LOGIC_COLOR
+participant ":CommandResult" as CommandResult LOGIC_COLOR
+end box
+box Model MODEL_COLOR_T1
+participant ":ModelManager" as ModelManager MODEL_COLOR
+end box
+
+group sd [Execute XYZFilterCommand]
+    activate LogicManager
+
+    LogicManager -> GuestFilterCommand : execute()
+    activate GuestFilterCommand
+
+    GuestFilterCommand -> ModelManager : updateFilteredGuestList(Predicate<Guest>)
+    activate ModelManager
+
+    ModelManager --> GuestFilterCommand
+    deactivate ModelManager
+
+    create CommandResult
+    GuestFilterCommand -> CommandResult
+    activate CommandResult
+
+    CommandResult --> GuestFilterCommand
+    deactivate CommandResult
+
+    GuestFilterCommand --> LogicManager : r
+    deactivate GuestFilterCommand
+end
+@enduml

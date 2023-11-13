@@ -1,0 +1,30 @@
+@startuml
+!include style.puml
+
+box Logic LOGIC_COLOR_T1
+participant ":XYZFilterCommandParser" as XYZFilterCommandParser LOGIC_COLOR
+participant ":XYZFilterCommand" as XYZFilterCommand LOGIC_COLOR
+end box
+
+box Model MODEL_COLOR_T1
+participant ":ABCPredicate" as ABCPredicate MODEL_COLOR
+end box
+
+create XYZFilterCommandParser
+group sd [Create XYZFilterCommand]
+
+        create ABCPredicate
+        activate XYZFilterCommandParser
+        XYZFilterCommandParser -> ABCPredicate
+        activate ABCPredicate
+        ABCPredicate -> XYZFilterCommandParser
+        deactivate ABCPredicate
+
+        create XYZFilterCommand
+        XYZFilterCommandParser -> XYZFilterCommand : XYZFilterCommand(predicates)
+        activate XYZFilterCommand
+
+        XYZFilterCommand --> XYZFilterCommandParser
+        deactivate XYZFilterCommand
+end
+@enduml
