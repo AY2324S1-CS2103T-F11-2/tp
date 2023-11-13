@@ -1,0 +1,70 @@
+@startuml
+!include style.puml
+skinparam ArrowFontStyle plain
+
+box Logic LOGIC_COLOR_T1
+participant ":LogicManager" as LogicManager LOGIC_COLOR
+participant ":AddressBookParser" as AddressBookParser LOGIC_COLOR
+participant ":XYZCommandParser" as XYZCommandParser LOGIC_COLOR
+participant ":XYZAddCommandParser" as XYZAddCommandParser LOGIC_COLOR
+participant ":ParserUtil" as ParserUtil LOGIC_COLOR
+participant ":XYZAddCommand" as XYZAddCommand LOGIC_COLOR
+end box
+
+[-> LogicManager : execute("xyz add n/Annette t/friend")
+activate LogicManager
+note left of LogicManager: xyz = guest or vendor
+
+LogicManager -> AddressBookParser : parseCommand("xyz add n/Annette t/friend")
+activate AddressBookParser
+
+create XYZCommandParser
+AddressBookParser -> XYZCommandParser
+activate XYZCommandParser
+note right of XYZCommandParser: XYZ = Guest or Vendor
+
+XYZCommandParser --> AddressBookParser
+deactivate XYZCommandParser
+
+AddressBookParser -> XYZCommandParser : parse("add n/Annette t/friend")
+activate XYZCommandParser
+
+create XYZAddCommandParser
+XYZCommandParser -> XYZAddCommandParser
+activate XYZAddCommandParser
+
+XYZAddCommandParser --> XYZCommandParser
+deactivate XYZAddCommandParser
+
+XYZCommandParser -> XYZAddCommandParser : parse("n/Annette t/friend")
+activate XYZAddCommandParser
+
+group ref [parse and create fields]
+    XYZAddCommandParser -[hidden]> ParserUtil
+end
+
+create XYZAddCommand
+XYZAddCommandParser -> XYZAddCommand
+activate XYZAddCommand
+
+XYZAddCommand --> XYZAddCommandParser
+deactivate XYZAddCommand
+
+XYZAddCommandParser --> XYZCommandParser
+deactivate XYZAddCommandParser
+'Hidden arrow to position the destroy marker below the end of the activation bar.
+XYZAddCommandParser -[hidden]-> XYZCommandParser
+destroy XYZAddCommandParser
+
+XYZCommandParser --> AddressBookParser
+deactivate XYZCommandParser
+'Hidden arrow to position the destroy marker below the end of the activation bar.
+XYZCommandParser -[hidden]-> AddressBookParser
+destroy XYZCommandParser
+
+AddressBookParser --> LogicManager
+deactivate AddressBookParser
+
+[<--LogicManager
+deactivate LogicManager
+@enduml

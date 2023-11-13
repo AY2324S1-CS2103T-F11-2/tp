@@ -1,0 +1,25 @@
+@startuml
+!include style.puml
+
+box Logic LOGIC_COLOR_T1
+participant ":XYZAddCommandParser" as XYZAddCommandParser LOGIC_COLOR
+participant ":ParserUtil" as ParserUtil LOGIC_COLOR
+participant ":XYZAddCommand" as XYZAddCommand LOGIC_COLOR
+end box
+
+group sd [parse and create fields]
+    XYZAddCommandParser -> ParserUtil: parseName("Annette")
+    ParserUtil --> XYZAddCommandParser: Name
+
+    XYZAddCommandParser -> ParserUtil: parseTags("friend")
+        ParserUtil --> XYZAddCommandParser: Tag
+
+end
+
+create XYZAddCommand
+XYZAddCommandParser -> XYZAddCommand
+activate XYZAddCommand
+
+XYZAddCommand --> XYZAddCommandParser
+deactivate XYZAddCommand
+@enduml

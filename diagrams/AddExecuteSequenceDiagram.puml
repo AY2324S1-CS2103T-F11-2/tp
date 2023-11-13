@@ -4,7 +4,7 @@ skinparam ArrowFontStyle plain
 
 box Logic LOGIC_COLOR_T1
 participant ":LogicManager" as LogicManager LOGIC_COLOR
-participant "e:XYZDeleteCommand" as XYZDeleteCommand LOGIC_COLOR
+participant "e:XYZAddCommand" as XYZAddCommand LOGIC_COLOR
 participant ":CommandResult" as CommandResult LOGIC_COLOR
 end box
 
@@ -13,34 +13,34 @@ participant ":Model" as Model MODEL_COLOR
 participant ":UniqueXYZList" as UniqueXYZList MODEL_COLOR
 end box
 
-note right of XYZDeleteCommand: XYZ = Guest or Vendor
+note right of XYZAddCommand: XYZ = Guest or Vendor
 [-> LogicManager
 activate LogicManager
 
-LogicManager -> XYZDeleteCommand : execute()
-activate XYZDeleteCommand
+LogicManager -> XYZAddCommand : execute()
+activate XYZAddCommand
 
-XYZDeleteCommand -> Model : deleteXYZ(1)
+XYZAddCommand -> Model : addXYZ(Annette)
 activate Model
-note right of XYZDeleteCommand: deleteXYZ = deleteGuest or deleteVendor
+note right of XYZAddCommand: addXYZ = addGuest or addVendor
 
-Model -> UniqueXYZList : deleteXYZ(1)
+Model -> UniqueXYZList : add(Annette)
 activate UniqueXYZList
 
 UniqueXYZList --> Model
 deactivate UniqueXYZList
 
-Model --> XYZDeleteCommand
+Model --> XYZAddCommand
 deactivate Model
 
 create CommandResult
-XYZDeleteCommand -> CommandResult
+XYZAddCommand -> CommandResult
 activate CommandResult
 
-CommandResult --> XYZDeleteCommand
+CommandResult --> XYZAddCommand
 deactivate CommandResult
 
-XYZDeleteCommand --> LogicManager : result
+XYZAddCommand --> LogicManager : result
 
 [<--LogicManager
 deactivate LogicManager
