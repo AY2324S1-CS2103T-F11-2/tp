@@ -189,7 +189,7 @@
         "code-contributed": "Code Contributed",
         "documentation": "Documentation",
         "contributions-to-team-tasks": "Contributions to team tasks",
-        "contributions-beyond-the-project-team": "Contributions beyond the Project Team"
+        "community": "Community"
       },
       "headingKeywords": {}
     },
@@ -197,7 +197,12 @@
       "src": "team/p-xp.md",
       "title": "Pan Xinping's Project Portfolio Page",
       "headings": {
-        "overview": "Overview"
+        "project-wedlog": "Project: WedLog",
+        "features": "Features",
+        "code-contributed": "Code Contributed",
+        "documentation": "Documentation",
+        "contributions-to-team-tasks": "Contributions to team tasks",
+        "community": "Community"
       },
       "headingKeywords": {}
     },
@@ -205,7 +210,12 @@
       "src": "team/samuelim01.md",
       "title": "Samuel Lim's Project Portfolio Page",
       "headings": {
-        "project-wedlog": "Project: WedLog"
+        "project-wedlog": "Project: WedLog",
+        "features": "Features",
+        "code-contributed": "Code Contributed",
+        "documentation": "Documentation",
+        "contributions-to-team-tasks": "Contributions to team tasks",
+        "community": "Community"
       },
       "headingKeywords": {}
     },
@@ -226,7 +236,12 @@
       "src": "team/wasjoe1.md",
       "title": "Joe Chua's Project Portfolio Page",
       "headings": {
-        "project-wedlog": "Project: WedLog"
+        "project-wedlog": "Project: WedLog",
+        "features": "Features",
+        "code-contributed": "Code Contributed",
+        "documentation": "Documentation",
+        "contributions-to-team-tasks": "Contributions to team tasks",
+        "community": "Community"
       },
       "headingKeywords": {}
     },
